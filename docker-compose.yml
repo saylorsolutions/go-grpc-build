@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  go-grpc-build:
+    image: "go-grpc-build:1.16"
+    container_name: go-grpc-build-c
+    build:
+      context: .
