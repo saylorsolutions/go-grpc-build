@@ -3,7 +3,8 @@ version: "3"
 
 services:
   go-grpc-build:
-    image: "go-grpc-build:1.16"
+    image: "saylorsolutions/go-grpc-build:0.0.2"
     container_name: go-grpc-build-c
     build:
       context: .
+    command: "tail -f /dev/null"

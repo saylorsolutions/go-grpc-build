@@ -15,7 +15,8 @@ RUN apt update && \
 
 WORKDIR "/init"
 COPY ["init.sh", "/init/"]
+RUN chmod -R 777 /init
 
 RUN bash -c /init/init.sh
 
-CMD tail -f /dev/null
+WORKDIR $GOPATH
