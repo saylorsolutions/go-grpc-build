@@ -71,6 +71,11 @@ else
 
     echo;
     echo;
+    log Included software
+    echo;
+    log `go version | cut -d' ' -f 3,4`
+    echo;
+    echo;
     log Installed software versions
     echo;
     log `protoc --version`
